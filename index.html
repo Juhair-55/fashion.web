@@ -1,86 +1,204 @@
 <!DOCTYPE html>
+<!-- DBI211 Assignment 2 - Fashion Accessories Website -->
+<!-- Group Members: Jaden Sim Zi Yang (105806517), Sze XiKai (105804265), Juhair Bin FAYZE (104398246) -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuxAccessories - Premium Accessories Store</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessoryHub - Fashion Accessories</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">Lux<span>Accessories</span></div>
+
+<!-- Header Section -->
+<header>
+    <a href="index.html" class="logo">Accessory<span>Hub</span></a>
     <div class="search-bar">
-      <input type="text" placeholder="Search accessories..." id="searchInput" aria-label="Search accessories">
-      <button type="button" aria-label="Search">&#128269;</button>
+        <input type="text" placeholder="Search accessories...">
+        <button>Search</button>
     </div>
-    <div class="auth-links">
-      <a href="#login">Login</a>
-      <a href="#signup">Sign Up</a>
+    <div class="header-buttons">
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
     </div>
-  </header>
+</header>
 
-  <!-- Navigation -->
-  <nav aria-label="Main navigation">
+<!-- Navigation Menu Section -->
+<nav>
     <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="accessories.html">Accessories</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+            <a href="glasses.html">Glasses</a>
+            <!-- CSS Dropdown Menu (Advanced Feature) -->
+            <ul class="dropdown">
+                <li><a href="glasses.html#sunglasses">Sunglasses</a></li>
+                <li><a href="glasses.html#optical">Optical</a></li>
+            </ul>
+        </li>
+        <li><a href="watches.html">Watches</a></li>
+        <li><a href="bags.html">Bags</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <!-- Hero Section -->
-  <main>
-    <section class="hero">
-      <h1>Elevate Your Style</h1>
-      <p>Discover our curated collection of premium accessories designed to complement your unique personality.</p>
-      <a href="accessories.html" class="btn">Shop Now</a>
-    </section>
-
-    <!-- Featured Offers -->
-    <section class="offers-section">
-      <h2>Featured Offers</h2>
-      <div class="offers-grid">
-        <div class="offer-card">
-          <img src="https://placehold.co/280x200?text=Gold+Necklace" alt="Gold chain necklace on display">
-          <h3>Gold Chain Necklace</h3>
-          <p class="price">$49.99 <span class="original-price">$79.99</span></p>
-        </div>
-        <div class="offer-card">
-          <img src="https://placehold.co/280x200?text=Leather+Watch" alt="Premium leather watch">
-          <h3>Premium Leather Watch</h3>
-          <p class="price">$89.99 <span class="original-price">$129.99</span></p>
-        </div>
-        <div class="offer-card">
-          <img src="https://placehold.co/280x200?text=Sunglasses" alt="Designer sunglasses">
-          <h3>Designer Sunglasses</h3>
-          <p class="price">$34.99 <span class="original-price">$59.99</span></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Embedded Video -->
-    <section class="offers-section">
-      <h2>Our Latest Collection</h2>
-      <video width="560" height="315" controls aria-label="LuxAccessories promotional video">
-        <source src="https://placehold.co/560x315.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="accessories.html">Accessories</a>
-      <a href="about.html">About Us</a>
-      <a href="feedback.html">Feedback</a>
+<!-- Primary Content Section -->
+<article>
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1>Welcome to AccessoryHub</h1>
+        <p>Your one-stop destination for premium fashion accessories. Discover glasses, watches, bags, jewelry, and more at unbeatable prices.</p>
+        <a href="glasses.html" class="btn">Shop Now</a>
     </div>
-    <p>&copy; 2026 LuxAccessories. All rights reserved. | <a href="mailto:info@luxaccessories.com">info@luxaccessories.com</a></p>
-  </footer>
 
-  <script src="script.js"></script>
+    <!-- Published URL -->
+    <p style="text-align:center; margin-bottom:30px; color:#b0b0d0;">
+        <strong>Published Website URL:</strong> 
+        <a href="#" target="_blank" style="color:#7b68ee;">https://your-group-url.byet.host</a>
+    </p>
+
+    <!-- Offers Section -->
+    <div class="section-header">
+        <h2>Offers</h2>
+        <a href="#">View all</a>
+    </div>
+    <div class="offers-grid">
+        <div class="offer-card">
+            <img src="images/offer1.jpg" alt="Stylish sunglasses on sale with 30 percent discount">
+            <div class="card-content">
+                <h3>Designer Sunglasses</h3>
+                <p>$49.99</p>
+                <span class="discount">30% OFF</span>
+            </div>
+        </div>
+        <div class="offer-card">
+            <img src="images/offer2.jpg" alt="Classic analog watch on sale with 25 percent discount">
+            <div class="card-content">
+                <h3>Classic Analog Watch</h3>
+                <p>$89.99</p>
+                <span class="discount">25% OFF</span>
+            </div>
+        </div>
+        <div class="offer-card">
+            <img src="images/offer3.jpg" alt="Leather crossbody bag on sale with 20 percent discount">
+            <div class="card-content">
+                <h3>Leather Crossbody Bag</h3>
+                <p>$65.00</p>
+                <span class="discount">20% OFF</span>
+            </div>
+        </div>
+        <div class="offer-card">
+            <img src="images/offer4.jpg" alt="Gold pendant necklace on sale with 15 percent discount">
+            <div class="card-content">
+                <h3>Gold Pendant Necklace</h3>
+                <p>$120.00</p>
+                <span class="discount">15% OFF</span>
+            </div>
+        </div>
+        <div class="offer-card">
+            <img src="images/offer5.jpg" alt="Premium bracelet set on sale with 40 percent discount">
+            <div class="card-content">
+                <h3>Premium Bracelet Set</h3>
+                <p>$35.00</p>
+                <span class="discount">40% OFF</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessories Categories Section -->
+    <h2>Accessories List</h2>
+    <div class="accessories-grid">
+        <a href="glasses.html" class="accessory-item">
+            <div class="accessory-circle">
+                <img src="images/cat-glasses.jpg" alt="Glasses category icon">
+            </div>
+            <p>Glasses</p>
+        </a>
+        <a href="watches.html" class="accessory-item">
+            <div class="accessory-circle">
+                <img src="images/cat-watch.jpg" alt="Watch category icon">
+            </div>
+            <p>Watches</p>
+        </a>
+        <a href="bags.html" class="accessory-item">
+            <div class="accessory-circle">
+                <img src="images/cat-bags.jpg" alt="Bags category icon">
+            </div>
+            <p>Bags</p>
+        </a>
+        <a href="jewelry.html" class="accessory-item">
+            <div class="accessory-circle">
+                <img src="images/cat-jewelry.jpg" alt="Jewelry category icon">
+            </div>
+            <p>Jewelry</p>
+        </a>
+        <a href="hats.html" class="accessory-item">
+            <div class="accessory-circle">
+                <img src="images/cat-hats.jpg" alt="Hats category icon">
+            </div>
+            <p>Hats</p>
+        </a>
+    </div>
+
+    <!-- Introduction with lists -->
+    <h2>Why Choose AccessoryHub?</h2>
+    <ul>
+        <li>Wide range of premium fashion accessories from top brands</li>
+        <li>Affordable pricing with regular discounts and offers</li>
+        <li>Fast and secure delivery worldwide</li>
+        <li>Easy returns and customer support</li>
+    </ul>
+
+    <h2>Our Top Categories</h2>
+    <ol>
+        <li>Sunglasses &amp; Optical Glasses</li>
+        <li>Watches - Analog &amp; Digital</li>
+        <li>Bags - Backpacks, Crossbody &amp; Totes</li>
+        <li>Jewelry - Necklaces, Rings &amp; Bracelets</li>
+        <li>Hats &amp; Caps</li>
+    </ol>
+
+    <!-- External Links -->
+    <h2>Fashion Resources</h2>
+    <p>Check out these popular fashion websites for more inspiration:</p>
+    <ul>
+        <li><a href="https://www.vogue.com" target="_blank" style="color:#7b68ee;">Vogue Fashion</a> - Latest trends and news</li>
+        <li><a href="https://www.gq.com" target="_blank" style="color:#7b68ee;">GQ Magazine</a> - Men's style guide</li>
+    </ul>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.
+    </div>
+</article>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; <a href="about.html">Group Number</a> | Last updated: May 2026</p>
+</footer>
+
+<!-- JavaScript Enhancement: Smooth scroll and search animation -->
+<script>
+/* JavaScript to enhance user experience with smooth scrolling */
+document.querySelector('.search-bar button').addEventListener('click', function() {
+    var query = document.querySelector('.search-bar input').value;
+    if (query.trim() !== '') {
+        alert('Searching for: ' + query);
+    }
+});
+
+/* Scroll animation for cards */
+window.addEventListener('scroll', function() {
+    var cards = document.querySelectorAll('.offer-card');
+    cards.forEach(function(card) {
+        var rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }
+    });
+});
+</script>
+
 </body>
 </html>

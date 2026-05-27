@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Watches Page - Showcasing watch products -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches - AccessoryHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Accessory<span>Hub</span></a>
+    <div class="search-bar">
+        <input type="text" placeholder="Search accessories...">
+        <button>Search</button>
+    </div>
+    <div class="header-buttons">
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="glasses.html">Glasses</a></li>
+        <li><a href="watches.html" class="active">Watches</a></li>
+        <li><a href="bags.html">Bags</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<article>
+    <h1>Watches Collection</h1>
+    <p>Time is precious — wear it in style. Discover our range of analog, digital, and smartwatches.</p>
+
+    <h2 id="analog">Analog Watches</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/watch1.jpg" alt="Classic silver analog watch with leather strap">
+            <div class="info">
+                <h3>Classic Silver</h3>
+                <p class="price">$129.00</p>
+                <p>Elegant timepiece with genuine leather strap.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/watch2.jpg" alt="Minimalist gold tone watch with mesh band">
+            <div class="info">
+                <h3>Gold Minimalist</h3>
+                <p class="price">$159.00</p>
+                <p>Sleek gold-tone design with stainless steel mesh.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/watch3.jpg" alt="Chronograph sports watch in black">
+            <div class="info">
+                <h3>Sport Chronograph</h3>
+                <p class="price">$199.00</p>
+                <p>Multi-function chronograph for active lifestyles.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="digital">Digital &amp; Smart Watches</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/watch4.jpg" alt="Modern smartwatch with AMOLED display">
+            <div class="info">
+                <h3>Smart Pro X</h3>
+                <p class="price">$249.00</p>
+                <p>AMOLED display, heart-rate monitor, GPS tracking.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/watch5.jpg" alt="Retro digital watch with calculator">
+            <div class="info">
+                <h3>Retro Digital</h3>
+                <p class="price">$35.00</p>
+                <p>Nostalgic calculator watch with LED backlight.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Watch comparison table with rowspan/colspan -->
+    <h2>Watch Type Comparison</h2>
+    <table class="data-table">
+        <caption>Comparison of Watch Categories</caption>
+        <tr>
+            <th>Feature</th>
+            <th>Analog</th>
+            <th>Digital</th>
+            <th>Smartwatch</th>
+        </tr>
+        <tr>
+            <td>Power Source</td>
+            <td>Battery / Automatic</td>
+            <td>Battery</td>
+            <td>Rechargeable</td>
+        </tr>
+        <tr>
+            <td>Water Resistance</td>
+            <td colspan="2">30m - 100m</td>
+            <td>50m (IP68)</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Best For</td>
+            <td>Formal events</td>
+            <td>Sports</td>
+            <td rowspan="2">Everyday / Fitness</td>
+        </tr>
+        <tr>
+            <td>Business</td>
+            <td>Outdoor</td>
+        </tr>
+        <tr>
+            <td>Price Range</td>
+            <td>$80 - $500</td>
+            <td>$20 - $100</td>
+            <td>$150 - $800</td>
+        </tr>
+    </table>
+
+    <h2>Watch Care Guide</h2>
+    <ul>
+        <li>Remove your watch before swimming unless it is rated water-resistant</li>
+        <li>Store watches in a dry, cool place away from direct sunlight</li>
+        <li>Service mechanical watches every 3-5 years</li>
+        <li>Clean straps regularly with a damp cloth</li>
+    </ul>
+
+    <p style="margin-top:20px;"><a href="#analog" style="color:#7b68ee;">Back to Analog Section</a> | <a href="#digital" style="color:#7b68ee;">Digital Section</a></p>
+</article>
+
+<footer>
+    <p>&copy; <a href="about.html">Group Number</a> | Last updated: May 2026</p>
+</footer>
+
+</body>
+</html>

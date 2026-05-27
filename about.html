@@ -1,111 +1,117 @@
 <!DOCTYPE html>
+<!-- About Page - Group member information -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - LuxAccessories</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AccessoryHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">Lux<span>Accessories</span></div>
+
+<!-- Header Section -->
+<header>
+    <a href="index.html" class="logo">Accessory<span>Hub</span></a>
     <div class="search-bar">
-      <input type="text" placeholder="Search accessories..." aria-label="Search accessories">
-      <button type="button" aria-label="Search">&#128269;</button>
+        <input type="text" placeholder="Search accessories...">
+        <button>Search</button>
     </div>
-    <div class="auth-links">
-      <a href="#login">Login</a>
-      <a href="#signup">Sign Up</a>
+    <div class="header-buttons">
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
     </div>
-  </header>
+</header>
 
-  <!-- Navigation -->
-  <nav aria-label="Main navigation">
+<!-- Navigation Menu Section -->
+<nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="accessories.html">Accessories</a></li>
-      <li><a href="about.html" class="active">About Us</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="glasses.html">Glasses</a></li>
+        <li><a href="watches.html">Watches</a></li>
+        <li><a href="bags.html">Bags</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <!-- Main Content -->
-  <main class="about-section">
-    <h1>About LuxAccessories</h1>
-    <p>LuxAccessories was founded in 2020 with a simple mission: to bring premium, affordable accessories to fashion-forward individuals around the world. Based in Melbourne, Australia, we curate high-quality pieces that elevate any look.</p>
+<!-- Primary Content Section -->
+<article>
+    <h1>About Us</h1>
+    <p>We are a group of passionate students from Swinburne University of Technology Sarawak Campus. This website was created as part of our DBI211 Web Technologies and Cloud Computing assignment.</p>
 
-    <h2>Our Story</h2>
-    <p>What started as a small online boutique has grown into a trusted brand serving thousands of customers across Australia and beyond. We believe accessories are the finishing touch that transforms an outfit from ordinary to extraordinary.</p>
+    <h2 id="team">Meet Our Team</h2>
+    <div class="team-grid">
+        <!-- Member 1: Jaden -->
+        <div class="team-member">
+            <img src="images/jaden.jpg" alt="Photo of Jaden Sim Zi Yang">
+            <h3>Jaden Sim Zi Yang</h3>
+            <p class="student-id">Student ID: 105806517</p>
+            <p>Jaden is responsible for designing the <strong>Homepage (index.html)</strong> and the <strong>Glasses page (glasses.html)</strong>. He is passionate about web design and user experience.</p>
+        </div>
 
-    <h2>What We Offer</h2>
-    <ul>
-      <li>Handcrafted jewellery made from sustainable materials</li>
-      <li>Premium leather watches with Swiss movements</li>
-      <li>Designer sunglasses with UV400 protection</li>
-      <li>Luxury handbags and wallets</li>
-      <li>Seasonal collections updated quarterly</li>
-    </ul>
+        <!-- Member 2: XiKai -->
+        <div class="team-member">
+            <img src="images/xikai.jpg" alt="Photo of Sze XiKai sitting by the sea">
+            <h3>Sze XiKai</h3>
+            <p class="student-id">Student ID: 105804265</p>
+            <p>XiKai is responsible for designing the <strong>About page (about.html)</strong> and the <strong>Watches page (watches.html)</strong>. He enjoys creative content creation and photography.</p>
+        </div>
 
-    <h2>Why Choose Us</h2>
-    <ol>
-      <li>Free shipping on orders over $50</li>
-      <li>30-day hassle-free returns</li>
-      <li>Authentic products with quality guarantee</li>
-      <li>24/7 customer support</li>
-      <li>Secure payment options</li>
-    </ol>
+        <!-- Member 3: Juhair -->
+        <div class="team-member">
+            <img src="images/juhair.jpg" alt="Photo of Juhair Bin FAYZE">
+            <h3>Juhair Bin FAYZE</h3>
+            <p class="student-id">Student ID: 104398246</p>
+            <p>Juhair is responsible for designing the <strong>Feedback page (feedback.html)</strong> and the <strong>Bags page (bags.html)</strong>. He has strong skills in front-end development.</p>
+        </div>
+    </div>
 
-    <h2>Our Store Locations</h2>
-    <table>
-      <thead>
+    <!-- Table showing task distribution -->
+    <h2>Task Distribution</h2>
+    <table class="data-table">
+        <caption>Group Member Responsibilities</caption>
         <tr>
-          <th>Store</th>
-          <th>Location</th>
-          <th>Phone</th>
-          <th>Hours</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Melbourne Central</td>
-          <td>123 Collins St, Melbourne VIC</td>
-          <td>(03) 9000 1234</td>
-          <td>Mon-Sat 9am-6pm</td>
-        </tr>
-        <tr>
-          <td>Sydney Flagship</td>
-          <td>456 George St, Sydney NSW</td>
-          <td>(02) 8000 5678</td>
-          <td>Mon-Sun 10am-8pm</td>
+            <th>Member</th>
+            <th>Student ID</th>
+            <th>Pages Designed</th>
+            <th>Role</th>
         </tr>
         <tr>
-          <td>Brisbane</td>
-          <td>789 Queen St, Brisbane QLD</td>
-          <td>(07) 3000 9012</td>
-          <td>Mon-Fri 9am-5pm</td>
+            <td>Jaden Sim Zi Yang</td>
+            <td>105806517</td>
+            <td>index.html, glasses.html</td>
+            <td>Lead Designer</td>
         </tr>
-      </tbody>
+        <tr>
+            <td>Sze XiKai</td>
+            <td>105804265</td>
+            <td>about.html, watches.html</td>
+            <td>Content Creator</td>
+        </tr>
+        <tr>
+            <td>Juhair Bin FAYZE</td>
+            <td>104398246</td>
+            <td>feedback.html, bags.html</td>
+            <td>Developer</td>
+        </tr>
     </table>
 
-    <h2>Our Team</h2>
-    <p>Our dedicated team of designers, stylists, and customer service professionals work tirelessly to ensure you receive the best shopping experience. We are passionate about fashion and committed to sustainability in everything we do.</p>
+    <h2>Our Skills</h2>
+    <ul>
+        <li>HTML5 and CSS3 web development</li>
+        <li>Responsive and fluid design</li>
+        <li>Web accessibility and usability</li>
+        <li>JavaScript for interactivity</li>
+    </ul>
 
-    <!-- Image with alt text for accessibility -->
-    <img src="https://placehold.co/800x300?text=Our+Team" alt="The LuxAccessories team in our Melbourne office" style="width:100%; border-radius:10px; margin-top:20px;">
-  </main>
+    <!-- Internal link to section -->
+    <p style="margin-top:20px;"><a href="#team" style="color:#7b68ee;">Back to Team Section</a></p>
+</article>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="accessories.html">Accessories</a>
-      <a href="about.html">About Us</a>
-      <a href="feedback.html">Feedback</a>
-    </div>
-    <p>&copy; 2026 LuxAccessories. All rights reserved. | <a href="mailto:info@luxaccessories.com">info@luxaccessories.com</a></p>
-  </footer>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; <a href="about.html">Group Number</a> | Last updated: May 2026</p>
+</footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
