@@ -1,0 +1,108 @@
+
+body {
+    background-image: url("background1.png");
+    background-attachment: fixed;   /* Image does not scroll with the page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    width: 20%;
+    position: relative;
+    top: 50px;
+}
+
+
+article {
+    position: relative;
+    top: 50px;
+}
+
+
+section {
+    margin-left: 30%;
+}
+
+
+nav {
+    text-align: center;   /* Center-align nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Display links inline (side by side) */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 0 20px;            /* 20px spacing left and right (shorthand) */
+    font-size: 18px;            /* 18px font size */
+    font-weight: bold;          /* Bold text */
+    color: #333333;             /* Text colour #333333 */
+    text-decoration: none;      /* Remove underline */
+}
+
+
+#ratesTable {
+    border-collapse: collapse;  /* Single border */
+}
+
+/* Single border on all cells */
+#ratesTable th,
+#ratesTable td {
+    border: 1px solid #000;
+    padding: 10px;              /* 10px spacing around every cell */
+    background-color: #EED9C4; /* Content cells background */
+}
+
+
+#ratesTable thead tr:first-child th {
+    background-color: #A67B5B;
+    color: #ffffff;
+}
+
+
+#ratesTable thead tr:nth-child(2) th {
+    background-color: #A67B5B;
+    color: #ffffff;
+}
+
+
+#ratesTable th:not(:first-child),
+#ratesTable td:not(:first-child) {
+    text-align: center;
+}
+
+#ratesTable td:first-child {
+    text-align: left;
+}
+
+
+form {
+    background-color: #fbd2ae;  /* Form background colour */
+    width: 400px;               /* Width set to 400px */
+    padding: 10px;
+}
+
+fieldset {
+    background-color: #fbd2ae;
+    border: 1px solid #999;
+    padding: 15px;
+}
+
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 3px;
+}

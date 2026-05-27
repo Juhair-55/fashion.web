@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel - Room Rates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER: contains nav and logo -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Hostel</a></li>
+                <li><a href="#">Room rates</a></li>
+                <li><a href="#">Book Now</a></li>
+            </ul>
+        </nav>
+        <!-- Logo linked to homepage, opens in new window -->
+        <a href="index.html" target="_blank">
+            <img src="logo.png" alt="Hostel Logo">
+        </a>
+    </header>
+
+    <!-- ARTICLE: contains room rates heading, table -->
+    <article>
+        <h1>Room Rates</h1>
+        <h2>Membership ID: SS111</h2>
+        <p style="text-align:center;">Refer to the table below for our room rates</p>
+
+        <table id="ratesTable">
+            <thead>
+                <tr>
+                    <th rowspan="2">Room Type</th>
+                    <th rowspan="2">Breakfast</th>
+                    <th colspan="2">Rate per person ($)</th>
+                </tr>
+                <tr>
+                    <th>Without membership</th>
+                    <th>With membership</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Single private</td>
+                    <td rowspan="2">Yes</td>
+                    <td>100</td>
+                    <td rowspan="4">10% discount</td>
+                </tr>
+                <tr>
+                    <td>Twin private</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Shared female</td>
+                    <td rowspan="2">No</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Shared male</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- SECTION: contains enquiry form -->
+    <section>
+        <form id="enquiryForm" onsubmit="return false;">
+            <fieldset>
+                <legend>Submit your enquiry here</legend>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <span class="error-msg" id="nameError"></span>
+
+                <br><br>
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-msg" id="emailError"></span>
+
+                <br><br>
+
+                <label for="enquiry">Enquiry:</label><br>
+                <textarea id="enquiry" name="enquiry" rows="5" cols="40"></textarea>
+                <span class="error-msg" id="enquiryError"></span>
+
+                <br><br>
+
+                <button type="button" onclick="validateForm()">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- TASK 3: JavaScript for form validation -->
+    <script>
+        // Clears all error messages from the form
+        function clearErrors() {
+            document.getElementById("nameError").textContent = "";
+            document.getElementById("emailError").textContent = "";
+            document.getElementById("enquiryError").textContent = "";
+        }
+
+        // Clears all form input values
+        function clearForm() {
+            document.getElementById("enquiryForm").reset();
+        }
+
+        // Validates each form field and displays appropriate error messages
+        function validateFields() {
+            var isValid = true;
+
+            var fullName = document.getElementById("fullName").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var enquiry = document.getElementById("enquiry").value.trim();
+
+            if (fullName === "") {
+                document.getElementById("nameError").textContent = "Please enter your user name.";
+                isValid = false;
+            }
+
+            if (email === "") {
+                document.getElementById("emailError").textContent = "Please enter your email.";
+                isValid = false;
+            }
+
+            if (enquiry === "") {
+                document.getElementById("enquiryError").textContent = "Please enter your enquiry.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Main validation function triggered on Submit button click
+        function validateForm() {
+            clearErrors();
+
+            var valid = validateFields();
+
+            if (valid) {
+                alert("Enquiry submitted");
+                clearForm();
+            }
+        }
+    </script>
+
+</body>
+</html>
