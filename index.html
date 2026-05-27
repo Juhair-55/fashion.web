@@ -1,16 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessoryHub - Home</title>
+    <!-- External stylesheet as required -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>AccessoryHub</h1>
-        <p class="tagline">Your Fashion Accessories Destination</p>
+        <p class="tagline">Your Ultimate Fashion Accessories Destination</p>
     </header>
+
+    <!-- Navigation / Menu Section - using unordered list as required -->
     <nav>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -21,31 +27,63 @@
             <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
+
+    <!-- Primary Content / Article Section -->
     <article>
         <h2>Welcome to AccessoryHub</h2>
-        <p>Welcome to <strong>AccessoryHub</strong>, your one-stop destination for the latest trends in fashion accessories. From stylish glasses and elegant watches to stunning necklaces, we bring you curated collections that elevate your everyday look.</p>
-        <p>Our website is dedicated to showcasing a variety of accessories that suit every style and occasion. Whether you are looking for a classic timepiece, trendy eyewear, or a statement necklace, AccessoryHub has something for everyone.</p>
+
+        <!-- Introduction as required -->
+        <p>
+            Welcome to <strong>AccessoryHub</strong> &mdash; your one-stop destination for the latest trends in fashion accessories.
+            We cover everything from stylish <a href="glasses.html">glasses</a>, elegant <a href="watches.html">watches</a>,
+            to stunning <a href="necklaces.html">necklaces</a>. Our curated collections are here to elevate your everyday look
+            and help you express your personal style.
+        </p>
+        <p>
+            Fashion accessories are the finishing touch to any outfit. Whether you are heading to a casual outing or a formal
+            event, the right accessory can make all the difference. At AccessoryHub, we believe everyone deserves to look and
+            feel their best &mdash; and it all starts with the right accessories.
+        </p>
+
+        <!-- Internal link to a section on this page -->
+        <p>Jump to: <a href="#offers">Featured Offers</a> | <a href="#external">Useful Links</a></p>
 
         <h3>What We Offer</h3>
+        <!-- Unordered list as required -->
         <ul>
             <li>Trendy and fashionable eyewear for all face shapes</li>
             <li>Elegant watches for every occasion</li>
             <li>Beautiful necklaces to complement any outfit</li>
+            <li>Style guides and buying tips for every budget</li>
         </ul>
 
-        <h3>Featured Accessories</h3>
+        <h3>How to Use This Website</h3>
+        <!-- Ordered list as required -->
+        <ol>
+            <li>Browse the navigation menu to explore each accessory category</li>
+            <li>Read our style guides and price comparisons on each page</li>
+            <li>Use the <a href="feedback.html">Feedback</a> page to share your thoughts</li>
+            <li>Visit our <a href="about.html">About</a> page to learn about our team</li>
+        </ol>
+
+        <!-- Featured Offers Section with ID for internal link -->
+        <h3 id="offers">Featured Accessories This Month</h3>
+        <p>Check out our top picks for this month across all categories:</p>
+
+        <!-- Well-formatted table with caption, thead, tbody, rowspan, colspan as required -->
         <table>
-            <caption>Featured Accessories of the Month</caption>
+            <caption>Featured Accessories of the Month - May 2026</caption>
             <thead>
                 <tr>
                     <th>Category</th>
                     <th>Item</th>
                     <th>Style</th>
-                    <th>Price Range</th>
+                    <th>Price Range (RM)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <!-- rowspan used here -->
                     <td rowspan="2">Glasses</td>
                     <td>Classic Aviator</td>
                     <td>Retro</td>
@@ -68,6 +106,7 @@
                     <td>RM 300 - RM 1,500</td>
                 </tr>
                 <tr>
+                    <!-- colspan used here -->
                     <td colspan="2">Necklaces - Gold Chain Collection</td>
                     <td>Elegant</td>
                     <td>RM 200 - RM 800</td>
@@ -75,15 +114,38 @@
             </tbody>
         </table>
 
-        <h3>Published Website URL</h3>
-        <p>Visit our live website: <a href="https://yourusername.github.io/accessoryhub/" target="_blank">https://yourusername.github.io/accessoryhub/</a></p>
+        <!-- External links section with ID for internal link -->
+        <h3 id="external">Useful External Links</h3>
+        <p>Learn more about fashion accessories from these trusted sources:</p>
+        <ul>
+            <!-- Minimum 2 external links opening in new window as required -->
+            <li><a href="https://www.vogue.com/fashion/accessories" target="_blank" rel="noopener noreferrer">Vogue - Fashion Accessories</a></li>
+            <li><a href="https://www.harpersbazaar.com/fashion/accessories/" target="_blank" rel="noopener noreferrer">Harper's Bazaar - Accessories</a></li>
+        </ul>
 
+        <!-- Published URL as required -->
+        <h3>Published Website</h3>
+        <p>Our website is hosted online. Visit us at:
+            <!-- Replace with your actual GitHub Pages URL -->
+            <a href="https://group7dbi211.github.io/accessoryhub/" target="_blank" rel="noopener noreferrer">
+                https://group7dbi211.github.io/accessoryhub/
+            </a>
+        </p>
+
+        <!-- Disclaimer as required - NOT in footer -->
         <div class="disclaimer">
-            <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</p>
+            <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only.
+            It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the
+            Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</p>
         </div>
+
     </article>
+
+    <!-- Footer Section -->
     <footer>
+        <!-- Group 7 links to about.html as required -->
         <p>&copy; <a href="about.html">Group 7</a> | Last updated: 20th May 2026</p>
     </footer>
+
 </body>
 </html>
