@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AccessoryHub - Your Fashion Accessories Destination</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AccessoryHub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #e0e0e0; background: #1a1a2e; }
+        header { background: #16213e; text-align: center; padding: 40px 20px; border-bottom: 3px solid #4a5fd9; }
+        header h1 { font-size: 2.5em; color: #a8b4f0; }
+        header p { color: #7b8ed4; font-style: italic; }
+        nav { background: #0f3460; position: sticky; top: 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { display: block; color: #c8d6f7; text-decoration: none; padding: 15px 25px; }
+        nav a:hover, nav a.active { background: #4a5fd9; color: #fff; }
+        article { max-width: 90%; margin: 30px auto; padding: 30px; background: #16213e; border-radius: 8px; }
+        h2 { color: #a8b4f0; border-bottom: 2px solid #4a5fd9; padding-bottom: 10px; margin-bottom: 15px; }
+        h3 { color: #7b8ed4; margin: 20px 0 10px; }
+        p { margin-bottom: 12px; }
+        ul, ol { margin: 10px 0 10px 25px; }
+        li { margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        caption { color: #a8b4f0; font-weight: bold; margin-bottom: 8px; }
+        th, td { padding: 10px; border: 1px solid #2a3a5e; text-align: left; }
+        th { background: #0f3460; color: #a8b4f0; }
+        tr:nth-child(even) { background: #1e2a4a; }
+        .disclaimer { margin-top: 25px; padding: 12px; border-left: 4px solid #4a5fd9; color: #999; font-size: 0.9em; }
+        footer { background: #16213e; text-align: center; padding: 20px; border-top: 3px solid #4a5fd9; margin-top: 30px; }
+        footer a { color: #a8b4f0; text-decoration: none; }
+        a { color: #6b8df7; }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>AccessoryHub</h1>
-        <p class="tagline">Your Fashion Accessories Destination</p>
+        <p>Your Fashion Accessories Destination</p>
     </header>
-
-    <!-- Navigation Section -->
     <nav>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -23,13 +45,10 @@
             <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
-
-    <!-- Primary Content -->
     <article>
         <h2>Welcome to AccessoryHub</h2>
         <p>Welcome to <strong>AccessoryHub</strong>, your one-stop destination for the latest trends in fashion accessories. From stylish glasses and elegant watches to stunning necklaces, we bring you curated collections that elevate your everyday look.</p>
-
-        <p>Our website is dedicated to showcasing a variety of accessories that suit every style and occasion. Whether you're looking for a classic timepiece, trendy eyewear, or a statement necklace, AccessoryHub has something for everyone.</p>
+        <p>Our website is dedicated to showcasing a variety of accessories that suit every style and occasion.</p>
 
         <h3>What We Offer</h3>
         <ul>
@@ -38,61 +57,28 @@
             <li>Beautiful necklaces to complement any outfit</li>
         </ul>
 
-        <h3 id="offers">Current Offers</h3>
-        <p>Check out our featured accessories below and explore each category to find your perfect match!</p>
-
-        <!-- Table for featured accessories -->
+        <h3>Featured Accessories</h3>
         <table>
             <caption>Featured Accessories of the Month</caption>
             <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Item</th>
-                    <th>Style</th>
-                    <th>Price Range</th>
-                </tr>
+                <tr><th>Category</th><th>Item</th><th>Style</th><th>Price Range</th></tr>
             </thead>
             <tbody>
-                <tr>
-                    <td rowspan="2">Glasses</td>
-                    <td>Classic Aviator</td>
-                    <td>Retro</td>
-                    <td>RM 50 - RM 150</td>
-                </tr>
-                <tr>
-                    <td>Blue Light Blockers</td>
-                    <td>Modern</td>
-                    <td>RM 80 - RM 200</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Watches</td>
-                    <td>Minimalist Analog</td>
-                    <td>Casual</td>
-                    <td>RM 100 - RM 500</td>
-                </tr>
-                <tr>
-                    <td>Smart Watch Pro</td>
-                    <td>Sporty</td>
-                    <td>RM 300 - RM 1500</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Necklaces - Gold Chain Collection</td>
-                    <td>Elegant</td>
-                    <td>RM 200 - RM 800</td>
-                </tr>
+                <tr><td rowspan="2">Glasses</td><td>Classic Aviator</td><td>Retro</td><td>RM 50 - RM 150</td></tr>
+                <tr><td>Blue Light Blockers</td><td>Modern</td><td>RM 80 - RM 200</td></tr>
+                <tr><td rowspan="2">Watches</td><td>Minimalist Analog</td><td>Casual</td><td>RM 100 - RM 500</td></tr>
+                <tr><td>Smart Watch Pro</td><td>Sporty</td><td>RM 300 - RM 1,500</td></tr>
+                <tr><td colspan="2">Necklaces - Gold Chain</td><td>Elegant</td><td>RM 200 - RM 800</td></tr>
             </tbody>
         </table>
 
-        <h3>Published Website URL</h3>
-        <p>Visit our live website: <a href="http://accessoryhub.byethost.com" target="_blank">http://accessoryhub.byethost.com</a></p>
+        <h3>Published URL</h3>
+        <p>Visit our live website: <a href="#">http://accessoryhub.byethost.com</a></p>
 
-        <!-- Disclaimer -->
         <div class="disclaimer">
-            <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</p>
+            <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for DBI211 Fundamentals of Web Technology, Swinburne University of Technology Sarawak Campus.</p>
         </div>
     </article>
-
-    <!-- Footer Section -->
     <footer>
         <p>&copy; <a href="about.html">Group 7</a> | Last updated: 20th May 2026</p>
     </footer>
