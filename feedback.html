@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - LuxAccessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Lux<span>Accessories</span></div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search accessories..." aria-label="Search accessories">
+      <button type="button" aria-label="Search">&#128269;</button>
+    </div>
+    <div class="auth-links">
+      <a href="#login">Login</a>
+      <a href="#signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="feedback.html" class="active">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="feedback-section">
+    <h1>We Value Your Feedback</h1>
+    <p style="color:#ccc; margin-bottom:20px;">Help us improve by sharing your experience with LuxAccessories.</p>
+
+    <form id="feedbackForm" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name <span style="color:#e94560;">*</span></label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address <span style="color:#e94560;">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0412 345 678">
+      </div>
+
+      <div class="form-group">
+        <label for="category">Feedback Category <span style="color:#e94560;">*</span></label>
+        <select id="category" name="category" required>
+          <option value="">-- Select a category --</option>
+          <option value="product">Product Quality</option>
+          <option value="delivery">Delivery Experience</option>
+          <option value="website">Website Usability</option>
+          <option value="customer-service">Customer Service</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Overall Rating <span style="color:#e94560;">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="rating" value="5" required> Excellent</label>
+          <label><input type="radio" name="rating" value="4"> Good</label>
+          <label><input type="radio" name="rating" value="3"> Average</label>
+          <label><input type="radio" name="rating" value="2"> Poor</label>
+          <label><input type="radio" name="rating" value="1"> Very Poor</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>What did you like? (Select all that apply)</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="liked" value="variety"> Product Variety</label>
+          <label><input type="checkbox" name="liked" value="pricing"> Pricing</label>
+          <label><input type="checkbox" name="liked" value="quality"> Quality</label>
+          <label><input type="checkbox" name="liked" value="support"> Support</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Additional Comments <span style="color:#e94560;">*</span></label>
+        <textarea id="comments" name="comments" required placeholder="Tell us more about your experience..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our newsletter</label>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Feedback</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="about.html">About Us</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <p>&copy; 2026 LuxAccessories. All rights reserved. | <a href="mailto:info@luxaccessories.com">info@luxaccessories.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
