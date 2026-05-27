@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - AccessoryHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AccessoryHub</h1>
+        <p class="tagline">Your Fashion Accessories Destination</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="glasses.html">Glasses</a></li>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="necklaces.html">Necklaces</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Feedback Form</h2>
+        <p>We value your opinion! Please fill in the form below to share your thoughts on our accessories collection and website experience.</p>
+
+        <form action="https://formspree.io/f/placeholder" method="post">
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="012-3456789">
+            </fieldset>
+
+            <!-- Preferences Fieldset -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+
+                <label>Favourite Accessory Category:</label>
+                <div class="radio-group">
+                    <input type="radio" id="cat-glasses" name="category" value="glasses">
+                    <label for="cat-glasses">Glasses</label>
+
+                    <input type="radio" id="cat-watches" name="category" value="watches">
+                    <label for="cat-watches">Watches</label>
+
+                    <input type="radio" id="cat-necklaces" name="category" value="necklaces">
+                    <label for="cat-necklaces">Necklaces</label>
+
+                    <input type="radio" id="cat-other" name="category" value="other">
+                    <label for="cat-other">Other</label>
+                </div>
+
+                <label>What interests you? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="int-trends" name="interests" value="trends">
+                    <label for="int-trends">Latest Trends</label>
+
+                    <input type="checkbox" id="int-deals" name="interests" value="deals">
+                    <label for="int-deals">Deals &amp; Offers</label>
+
+                    <input type="checkbox" id="int-reviews" name="interests" value="reviews">
+                    <label for="int-reviews">Product Reviews</label>
+
+                    <input type="checkbox" id="int-tips" name="interests" value="tips">
+                    <label for="int-tips">Style Tips</label>
+                </div>
+
+                <label for="budget">Budget Range:</label>
+                <select id="budget" name="budget">
+                    <option value="">-- Select your budget --</option>
+                    <option value="below100">Below RM 100</option>
+                    <option value="100-500">RM 100 - RM 500</option>
+                    <option value="500-1000">RM 500 - RM 1,000</option>
+                    <option value="above1000">Above RM 1,000</option>
+                </select>
+            </fieldset>
+
+            <!-- Feedback Fieldset -->
+            <fieldset>
+                <legend>Your Feedback</legend>
+
+                <label for="rating">Overall Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">-- Rate our website --</option>
+                    <option value="5">Excellent (5/5)</option>
+                    <option value="4">Good (4/5)</option>
+                    <option value="3">Average (3/5)</option>
+                    <option value="2">Below Average (2/5)</option>
+                    <option value="1">Poor (1/5)</option>
+                </select>
+
+                <label for="comments">Comments &amp; Suggestions:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts with us..."></textarea>
+            </fieldset>
+
+            <!-- Form Buttons -->
+            <div class="form-buttons">
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>&copy; <a href="about.html">Group 7</a> | Last updated: 20th May 2026</p>
+    </footer>
+</body>
+</html>
